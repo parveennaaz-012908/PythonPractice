@@ -1,0 +1,82 @@
+- Logging and assertions
+- Debugger, The debugger is a feature of MU that executes  a program  one instruction at a time, giving one chances to inspect the values in variables while your code runs 
+  and track how the  value changes over the course of your program.
+
+  Raising Exception :
+     * Python raise exception whenever it tries to execute invalid code.
+     * Python handle the exception with try and except statements, so that our program can recover from exceptions that you anticipated.
+     * You can also raise your own exception in your code.
+
+    Raising an exception is a way of saying, " Stop running the code in this function  and move the program."
+
+    Exception are raised with a raise statement, In code, a raise statement consist of the following.
+      * The raise keyword
+      * A call to the Exception() function
+      * A String with a helpful error message passed to the Execution() function.
+      Example:
+      For example, enter the following into the interactive shell:
+
+
+    >>> raise Exception('This is the error message.')
+        Traceback (most recent call last):
+        File "<pyshell#191>", line 1, in <module>
+        raise Exception('This is the error message.')
+      Exception: This is the error message.
+  If there are no try and except statements covering the raise statement that raised the exception, the program simply crashes and displays the exception’s error message.
+
+  Getting the Traceback as a String:
+    When Python encounters an error, it produce a treasure trove of error information called traceback.
+    The traceback includes the error message, the line that cause  the error, the sequence of the function calls that led to the error. This sequence
+    of calls is called the call stack.  
+
+Assertions:
+  An assertion is a sab´nity check to make sure your code isn't doing something obviously wrong.
+  These sanity checks are performed by assert statements.
+  If the sanity check fails, then an AssertionError exception is raised
+  
+  In code, as assert statemnet consist of the following:
+    * The assert keyword
+    * A condition ( that is, an expression that evaluates to True or False)
+    * A comma
+    * A string to display when the condition is false.
+
+    Examples:
+    >>> ages = [26, 57, 92, 54, 22, 15, 17, 80, 47, 73]
+    >>> ages.sort()
+    >>> ages
+    [15, 17, 22, 26, 47, 54, 57, 73, 80, 92]
+    >>> assert
+    ages[0] <= ages[-1] # Assert that the first age is <= the last age.
+
+    >>> ages = [26, 57, 92, 54, 22, 15, 17, 80, 47, 73]
+    >>> ages.reverse()
+    >>> ages
+    [73, 47, 80, 17, 15, 22, 54, 92, 57, 26]
+    >>> assert ages[0] <= ages[-1] # Assert that the first age is <= the last age.
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    AssertionError
+
+  Notes:
+  * Assertions are for progammer errors, not user errors
+  * Assertions should only fail while the program is under development; a user should never see an assertion error in a finished program. 
+  * If you run a Python script with python -O myscript.py instead of python myscript.py, Python will skip assert statements.
+
+Logging:
+  Python’s logging module makes it easy to create a record of custom messages that you write. 
+  These log messages will describe when the program execution has reached the logging function call 
+    and list any variables you have specified at that point in time.
+  Note :
+    you can always disable them later by adding a single logging.disable(logging.CRITICAL)
+
+  Benefits:
+    * You can change the priority of the logging message you want to see.
+    * Passing logging.DEBUG  to the basicConfig() function's level keyword argument will show the messages from all the logging levels(DEBUG being the lowest
+     level) 
+    * In case of error, you can set basicConfig()'s level argument to logging.ERROR. 
+    * This will show only ERROR and CRITICAL messages and skip the DEBUG, INFO, and WARNING messages.
+
+  Disabling Logging:
+    The logging.disable() function disables these so that you don’t have to go into your program and remove all the logging calls by hand.
+    You simply pass logging.disable() a logging level, and it will suppress all log messages at that level or lower. 
+    So if you want to disable logging entirely, just add logging.disable(logging.CRITICAL) to your program. 

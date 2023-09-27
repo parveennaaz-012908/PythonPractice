@@ -1,0 +1,54 @@
+2023-09-26 17:56:06,792 -  DEBUG -  Start of program
+2023-09-26 17:56:06,792 -  DEBUG -  Start of factorial(5)
+2023-09-26 17:56:06,792 -  DEBUG -  i is number 0, total is 0
+2023-09-26 17:56:06,792 -  DEBUG -  i is number 1, total is 0
+2023-09-26 17:56:06,792 -  DEBUG -  i is number 2, total is 0
+2023-09-26 17:56:06,792 -  DEBUG -  i is number 3, total is 0
+2023-09-26 17:56:06,792 -  DEBUG -  i is number 4, total is 0
+2023-09-26 17:56:06,792 -  DEBUG -  i is number 5, total is 0
+2023-09-26 17:56:06,792 -  DEBUG -  End of factorial(5)
+2023-09-26 17:56:06,792 -  DEBUG -  End of Program
+2023-09-26 17:56:06,792 -  DEBUG -  Some debugging details.
+2023-09-26 17:56:06,792 -  INFO -  The logging module is working.
+2023-09-26 17:56:06,792 -  WARNING -  An error message is about to be logged.
+2023-09-26 17:56:06,792 -  ERROR -  An error has occurred.
+2023-09-26 17:56:06,793 -  CRITICAL -  The program is unable to recover!
+2023-09-26 17:56:06,793 -  CRITICAL -  Critical error! Critical error!
+2023-09-26 17:56:06,793 -  CRITICAL -  Critical error! Critical error!
+2023-09-26 17:56:06,793 -  ERROR -  Error! Error!
+2023-09-26 17:57:08,550 -  DEBUG -  Start of program
+2023-09-26 17:57:08,551 -  DEBUG -  Start of factorial(5)
+2023-09-26 17:57:08,551 -  DEBUG -  i is number 0, total is 0
+2023-09-26 17:57:08,551 -  DEBUG -  i is number 1, total is 0
+2023-09-26 17:57:08,551 -  DEBUG -  i is number 2, total is 0
+2023-09-26 17:57:08,551 -  DEBUG -  i is number 3, total is 0
+2023-09-26 17:57:08,551 -  DEBUG -  i is number 4, total is 0
+2023-09-26 17:57:08,551 -  DEBUG -  i is number 5, total is 0
+2023-09-26 17:57:08,551 -  DEBUG -  End of factorial(5)
+2023-09-26 17:57:08,551 -  DEBUG -  End of Program
+2023-09-26 17:57:08,551 -  DEBUG -  Some debugging details.
+2023-09-26 17:57:08,551 -  INFO -  The logging module is working.
+2023-09-26 17:57:08,551 -  WARNING -  An error message is about to be logged.
+2023-09-26 17:57:08,551 -  ERROR -  An error has occurred.
+2023-09-26 17:57:08,551 -  CRITICAL -  The program is unable to recover!
+2023-09-26 17:57:08,551 -  CRITICAL -  Critical error! Critical error!
+2023-09-26 17:57:08,552 -  CRITICAL -  Critical error! Critical error!
+2023-09-26 17:57:08,552 -  ERROR -  Error! Error!
+2023-09-26 17:57:11,633 -  DEBUG -  Start of program
+2023-09-26 17:57:11,633 -  DEBUG -  Start of factorial(5)
+2023-09-26 17:57:11,633 -  DEBUG -  i is number 0, total is 0
+2023-09-26 17:57:11,633 -  DEBUG -  i is number 1, total is 0
+2023-09-26 17:57:11,634 -  DEBUG -  i is number 2, total is 0
+2023-09-26 17:57:11,634 -  DEBUG -  i is number 3, total is 0
+2023-09-26 17:57:11,634 -  DEBUG -  i is number 4, total is 0
+2023-09-26 17:57:11,634 -  DEBUG -  i is number 5, total is 0
+2023-09-26 17:57:11,634 -  DEBUG -  End of factorial(5)
+2023-09-26 17:57:11,634 -  DEBUG -  End of Program
+2023-09-26 17:57:11,634 -  DEBUG -  Some debugging details.
+2023-09-26 17:57:11,634 -  INFO -  The logging module is working.
+2023-09-26 17:57:11,634 -  WARNING -  An error message is about to be logged.
+2023-09-26 17:57:11,634 -  ERROR -  An error has occurred.
+2023-09-26 17:57:11,634 -  CRITICAL -  The program is unable to recover!
+2023-09-26 17:57:11,634 -  CRITICAL -  Critical error! Critical error!
+2023-09-26 17:57:11,634 -  CRITICAL -  Critical error! Critical error!
+2023-09-26 17:57:11,634 -  ERROR -  Error! Error!
