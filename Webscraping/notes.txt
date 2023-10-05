@@ -1,0 +1,52 @@
+Webscraping: It is the term for using a program to download and process content from the Webscraping
+Example:
+     Google runs many web scraing programs to index web pages for its search engine.
+Modules:
+    - webbrowser: Comes with python and open a brwoser to a specific pages.
+    - request: Download files and web pages fron the internet.
+    - bs4 : Parses HTML, the format that web pages are written in.
+    - selenium : Launches and controls a web browser. The selenium module is able to fill in forms 
+                 simulator mouse dicts in the browser.
+
+Downloading Files from the Web with the requests Module:
+    -The request module can be used to download the file from web page without having worry about the
+     network errors, connection problem and data compression.
+
+    -The request module doesn't come with python, so it need to be install first.
+        -pip install --user requests
+    - The request module is written because of the complexity of urllib2 module.
+
+Downloading a Web Page with the requests.get() Function
+    - The requests.get() function takes a string of a URL to download. By calling type() on request
+        on requests.get()'s return value, you can see that it returns a Response object, which 
+        contains the  response  that web server gave for your request.  
+
+Parsing HTML with the bs4 Module:
+    - Beautiful Soup is a module for extracting information from HTML page. The Beautiful soul's name 
+        is bs4
+    Creating a BeautifulSoup Object from HTML:
+     - The bs4.BeautifulSoup() function needs to called with a string containing the HTML it will Parses
+     - It will return BeautifulSoup object.
+
+     Table 12-2: Examples of CSS Selectors
+
+You can retrieve a web page element from a BeautifulSoup object by calling the select()method and passing a string of a CSS selector for the element you are looking for. 
+Selectors are like regular expressions: they specify a pattern to look for—in this case, in HTML pages instead of general text strings.
+
+Selector passed to the select() method
+
+Will match . . .
+
+soup.select('div') : All elements named <div>
+
+soup.select('#author'): The element with an id attribute of author
+
+soup.select('.notice'): All elements that use a CSS class attribute named notice
+
+soup.select('div span'): All elements named <span> that are within an element named <div>
+
+soup.select('div > span'): All elements named <span> that are directly within an element named <div>, with no other element in between
+
+soup.select('input[name]'): All elements named <input> that have a name attribute with any value
+
+soup.select('input[type="button"]'): All elements named <input> that have an attribute named type with value button
