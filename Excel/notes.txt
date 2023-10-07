@@ -1,0 +1,1 @@
+* OpenPyXL will automatically interpret the dates in column A and return them as datetime values rather than strings
