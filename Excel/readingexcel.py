@@ -14,14 +14,15 @@ from openpyxl.utils import get_column_letter, column_index_from_string
 
 
 if __name__=='__main__':
-    wb=openpyxl.load_workbook("example.xlsx")
-    wb.sheetnames # The workbook's sheet's name.
-    sheet = wb['Sheet3']
-    print(type(sheet))
-    print(sheet.title)
+    wb=openpyxl.load_workbook("PythonPractice/Excel/example.xlsx")
+    print('type(wb)',type(wb))
+    print('Sheets Name::',wb.sheetnames) # The workbook's sheet's name.
+    sheet3 = wb['Sheet3']
+    print(type(sheet3))
+    print(sheet3.title)
     anotherSheet =wb.active # Get the active sheet.
     print(anotherSheet)
-    sheet1=wb['sheet1']
+    sheet1=wb['Sheet1']
     print(sheet1['A1'])
     print(sheet1['A1'].value) #Get the value from the cell.
     cellB=sheet1['B1'] # Get another cell from the sheet.
@@ -32,17 +33,17 @@ if __name__=='__main__':
     print(sheet1['C1'].value)
 
     #using the sheet’s cell() method and passing it row=1 and column=2 gets you a Cell object for cell B1
-    print(sheet.cell(row=1,column=2)) 
+    print('sheet3',sheet1.cell(row=1,column=2)) 
 
     #It extract the value of the cell as passing parameter of row and column.
-    print(sheet.cell(row=1,column=2).value)
+    print(sheet1.cell(row=1,column=2).value)
 
     for i in range(1,8,2):# Go through every other row:
-        print(i,sheet.cell(row=i,column=2).value)
+        print(i,sheet1.cell(row=i,column=2).value)
 
-    print(sheet.max_row) # Get the highest row number.
+    print(sheet1.max_row) # Get the highest row number.
 
-    print(sheet.max_column) # Get the highest column number.
+    print(sheet1.max_column) # Get the highest column number.
 
     #Converting between Column Letters and Numbers
 
@@ -53,21 +54,21 @@ if __name__=='__main__':
 
 
 
-    print(get_column_letter(sheet.max_column))
+    print(get_column_letter(sheet1.max_column))
 
     print(column_index_from_string('A')) # Get A's number.
     print(column_index_from_string('AA'))
 
-    print(tuple(sheet['A1':'C3'])) # Get all cells from A1 to C3.
+    print(tuple(sheet1['A1':'C3'])) # Get all cells from A1 to C3.
 
-    for rowOfCellObjects in sheet['A1':'C3']:
+    for rowOfCellObjects in sheet1['A1':'C3']:
         for cellObject in rowOfCellObjects:
             print(cellObject.coordinate,cellObject.value)
         print('---- End of Row ----')
 
     list(sheet1.columns)[1] # Get second column's cells.
 
-    for cellObj in list(sheet.columns)[1]:
+    for cellObj in list(sheet1.columns)[1]:
         print(cellObj.value)
     
     
